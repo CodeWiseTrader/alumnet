@@ -1,0 +1,19 @@
+{
+  "name": "alument",
+  "version": "1.0.0",
+  "description": "Alumni Portal",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/CodeWiseTrader/alumnet.git"
+  },
+  "author": "Dhruv Vaghasiya, Hard Shah, Aditya Agrawal, Divy Patel, Nisarg Patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeWiseTrader/alumnet/issues"
+  },
+  "homepage": "https://github.com/CodeWiseTrader/alumnet#readme"
+}
