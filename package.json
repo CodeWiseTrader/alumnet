@@ -19,7 +19,10 @@
   "dependencies": {
     "@propelauth/javascript": "^2.0.5",
     "express": "^4.18.2",
-    "express-handlebars": "^7.0.7"
+    "express-handlebars": "^7.0.7",
+    "jsdom": "^22.0.0",
+    "mime": "^3.0.0",
+    "socket.io": "^4.6.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"

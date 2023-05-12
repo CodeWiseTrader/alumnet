@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://www.unpkg.com/@propelauth/javascript@2.0.0/dist/javascript.min.js"
+      integrity="sha384-CnMW/GT96q1vxl3xq1fIbUrmXpDIsXVtY+/FpJW+rMSCgjlOWpbVfs5G0dg2bMN5"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="display-when-logged-out">
+      <button id="signup">Sign Up</button>
+      <button id="login">Login</button>
+    </div>
+    <div id="display-when-logged-in">
+      <button id="account">Account</button>
+      <button id="logout">Logout</button>
+    </div>
+
+    <script>
+      const client = PropelAuth.createClient({
+        authUrl: "https://111545691.propelauthtest.com", // Change me
+        enableBackgroundTokenRefresh: true,
+      });
+
+      document.getElementById("signup").onclick = client.redirectToSignupPage;
+      document.getElementById("login").onclick = client.redirectToLoginPage;
+      document.getElementById("account").onclick = client.redirectToAccountPage;
+      document.getElementById("logout").onclick = client.logout;
+
+      client.addLoggedInChangeObserver((isLoggedIn) => {
+        if (isLoggedIn) {
+          document.getElementById("display-when-logged-in").style.display =
+            "revert";
+          document.getElementById("display-when-logged-out").style.display =
+            "none";
+        } else {
+          document.getElementById("display-when-logged-in").style.display =
+            "none";
+          document.getElementById("display-when-logged-out").style.display =
+            "revert";
+        }
+      });
+    </script>
+  </body>
+</html>
