@@ -1,0 +1,21 @@
+doctype html
+html 
+    head 
+        title Alumnet 
+        link(rel="stylesheet" href="css/home.css")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet")
+    body
+        header.homepage
+            h1.title ALUMNET
+
+            -const liStyle = {"color": "#daa42f"}
+            ul.list-inline 
+                li 
+                li(style=liStyle)
+                li
+            
+            div 
+                a(href='/users/register') SIGNUP 
+                a(href='/users/login') LOGIN

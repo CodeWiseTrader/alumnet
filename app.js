@@ -87,9 +87,15 @@ app.get("*", function (req, res, next) {
   next();
 });
 
+app.get("/home", function (req, res) {
+  res.render("home", {
+    toptitle: "Home",
+  });
+});
+
 // Home Route
 app.get("/", function (req, res) {
-  res.render("index", {
+  res.render("home", {
     toptitle: "Alumni Portal/Home",
   });
 });
