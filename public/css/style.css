@@ -2,14 +2,18 @@
   color:orange;
 }
 .container .list-group-item{
-  box-shadow: 6px 6px 3px yellow;
+  box-shadow: 6px 6px 3px rgb(195, 255, 246);
   transition: all 2s ;
-
+  background-color: #91a4c3;
+  color: red;
 }
 .container .list-group-item:hover{
   
   transform: scale(1.2);
   
+}
+a {
+  color: rgb(255, 255, 255);
 }
 .dropdown button h2{
   padding:5px 8px 
@@ -38,7 +42,7 @@ body {
 .startup {
   background-position: center;
   background:linear-gradient(to right, #2926ac 0%, #6128be 100%);
- background-image: url("../img/ms.jpg");
+  background-image: url("../img/ms.jpg");
   background-size: cover;
   height: 100%;
 }

@@ -8,9 +8,9 @@ block content
      br
      ul.list-group
        each article in articles
-         li.list-group-item.shadow-none.p-3.mb-5.bg-secondary.rounded
+         li.list-group-item.shadow-none.p-3.mb-5.rounded
            h2
-            a.text-warning(href="/articles/"+article._id)=article.title
+            a(href="/articles/"+article._id)=article.title
            h3.badge.badge-pill.badge-primary Post by Alumni #{article.author} 
            p.text-white= article.body
            if user
@@ -23,9 +23,9 @@ block content
      br    
      ul.list-group
        each event in events
-         li.list-group-item.shadow-none.p-3.mb-5.bg-secondary.rounded
+         li.list-group-item.shadow-none.p-3.mb-5.rounded
            h2
-            a.text-warning(href="/events/"+event._id)=event.title
+            a(href="/events/"+event._id)=event.title
            h3.badge.badge-pill.badge-danger Post by Professor #{event.author}
            h3.badge.badge-pill.badge-danger Event Date #{event.date} 
            p.text-white= event.body
