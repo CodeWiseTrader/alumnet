@@ -9,17 +9,17 @@ block content
      ul.list-group
        each alumni in alumnus
          if(alumni.slct=="alumni")
-           li.list-group-item.bg-primary
+           li.list-group-item(style = {"background-color": "Black"})
              h4.text-white Name: #{alumni.name}
-           li.list-group-item.bg-dark
+           li.list-group-item(style = {"background-color": "grey"})
              h4.text-white EmailId: #{alumni.email}
-           li.list-group-item.bg-primary 
+           li.list-group-item(style = {"background-color": "Black"})
              h4.text-white Degree:#{alumni.degree}
-           li.list-group-item.bg-dark
+           li.list-group-item(style = {"background-color": "grey"})
              h4.text-white Skills:#{alumni.skills}   
-           li.list-group-item.bg-primary
+           li.list-group-item(style = {"background-color": "Black"})
              h4.text-white Passing Year: #{alumni.passdata}   
-           li.list-group-item.bg-dark
+           li.list-group-item(style = {"background-color": "grey"})
              h4.text-white College: #{alumni.college}
            li.list-group-item
              a.btn.btn-success(href='https://api.whatsapp.com/send?phone=91'+alumni.number target="blank") Chat With Whatsapp

@@ -9,7 +9,7 @@ block content
      ul.list-group
        each clip in clips
          li.list-group-item.shadow-none.p-3.mb-5.rounded(style=styles)
-           h2 Title: #{clip.title}
+           h2(style={"color": "white"}) Title: #{clip.title}
            h3.badge.badge-pill.badge-primary Event was organised on #{clip.date} 
            br
            video(src="../../videos/demo.mp4" poster="initial_static_picture.jpg" width="650" controls="")
