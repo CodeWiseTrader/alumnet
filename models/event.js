@@ -1,6 +1,6 @@
 let mongoose = require("mongoose");
 
-// Article Schema
+// Event Schema
 let eventSchema = mongoose.Schema({
   title: {
     type: String,

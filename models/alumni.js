@@ -38,7 +38,7 @@ const AlumniSchema = mongoose.Schema({
     type: String,
     required: false,
   },
-  collage: {
+  college: {
     type: String,
     required: false,
   },
