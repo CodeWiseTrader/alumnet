@@ -2,9 +2,10 @@
   color:orange;
 }
 .container .list-group-item{
-  box-shadow: 6px 6px 3px rgb(195, 255, 246);
+  box-shadow: 6px 3px 2px rgb(85, 91, 90);
   transition: all 2s ;
-  background-color: #91a4c3;
+  /* background-color: #263A29; */
+  background-color: #263A29;
   color: red;
 }
 .container .list-group-item:hover{
@@ -37,6 +38,7 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: #ddd0c8;
 }
 
 .startup {

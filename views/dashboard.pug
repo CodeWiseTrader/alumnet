@@ -4,7 +4,7 @@ extends layout
 block content
   .container
      br
-     h1 Posts
+     h1.font-weight-bold(style={"color": "#263A29"}) POSTS
      br
      ul.list-group
        each article in articles
@@ -19,7 +19,7 @@ block content
                a.btn.btn-danger.delete-article(href='#',data-id=article._id) Delete
 
            
-     h1 Events       
+     h1.font-weight-bold(style={"color": "#263A29"}) EVENTS       
      br    
      ul.list-group
        each event in events
